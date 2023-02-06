@@ -29,7 +29,7 @@ int main()
 
     int ct[n];
 
-    priority_queue<pi, vector<pi>, greater<pi> > pq;
+    priority_queue<pi, vector<pi>, greater<pi>> pq;
 
     int j = 0, t = p[0].at, k = 0;
 
