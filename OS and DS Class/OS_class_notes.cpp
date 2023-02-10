@@ -7,17 +7,17 @@ Classical problem synchronization :-
 3. Dining philosopher problem
 
 
-Simaphores -
-Significant techniques to manage a concurrent process by using a simple integer value known as Simaphores.
+Semaphores -
+Significant techniques to manage a concurrent process by using a simple integer value known as Semaphores.
 It is simply an integer value or variable that is shared between threads.
 This variable is used to solve a critical section problem and to achieve the process synchronization in multiprocessing environment.
 2 types:
-1. Binary Simaphores : can have only 2 values 0 and 1 . Its value is initialized to 1 . It is used to implement the process of critical section problem with multiple processes.
-2. Counting Simaphores : Its value can range over an unrestricted domain . Used to control access to a resource that has multiple instances .
+1. Binary Semaphores : can have only 2 values 0 and 1 . Its value is initialized to 1 . It is used to implement the process of critical section problem with multiple processes.
+2. Counting Semaphores : Its value can range over an unrestricted domain . Used to control access to a resource that has multiple instances .
 
 Here atomic means the variable on which read, modify and update happen at the same time with no preemption .
 
 Limitations :
-One of the biggest limitation of Simaphores is priority
+One of the biggest limitation of Semaphores is priority
 
 */
