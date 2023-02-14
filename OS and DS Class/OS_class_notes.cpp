@@ -40,14 +40,32 @@ If cycle is present in RAG then deadlock may or may not be present in RAG.
 
 
 Deadlock preventing methods in OS :
-1. Deadlock prevention
-2. Deadlock avoidance
-3. Detection and recovery
-4. Deadlock ignorance (ostrich approach)
+1. Deadlock prevention - Design such a system which violates atleast 1 of the 4 necessary conditions of deadlock and ensure independence from deadlock .
+2. Deadlock avoidance (Banker's Algo) - System maintains a set of data using which it takes a decision whether to entertain a new request or not to be in saved state. System maintains some database . System (kernel) analyse the data base to determine whether granting our request can lead to deadlock in future . If does not lead to deadlock then granting otherwise keep pending until they can be granted .
+3. Detection and recovery - Process may face long delay for obtaining a resource . here we wait until deadlock occurs and once we detect it then we recover from it.
+4. Deadlock ignorance (ostrich approach) - Ignore the problem as if it does not exist .
 
+1.Deadlock Prevention :
+Elimination of mutual exclusion condition : The mutual exclusion condition must hold for non-shareable resources . This condition is difficult to eliminate because some resources such as hard-disk and printer inherently non-shareable . Note that shareable resources like read-only file do not require mutually exclusive access and therefore cannot be involved indirectly .
 
+Elimination of Hold and Wait : There are possibilities to eliminate this condition . The 1st is that the process request be granted all of the resources it needs at once prior to execution . The 2nd is that to disallow a process from requesting resources whenever it has previously allocated resources .
 
+Elimination of No preemption : When a process holding some resources is denied a request for additional resources the process must release its held resources and if necessary request them again together with additional resources .
 
+Elimination of Circular Wait : The circular wait can be denied by imposing a total ordering on all the resource types and then forcing all processes to request the resources in order .
+
+2.Deadlock avoidance (Banker's Algo) :
+this approach of the deadlock problem anticipates ....
+It dynamically examines to ensure that the circular wait .
+
+Safe State : if there is a safe execution sequence .
+An execution sequence is an ordering for process execution such that eac hprocess runs until it terminates and all requests for resources are immediately granted if the resource are available.
+An unsaved state may not be deadlocked but there is atleast once sequence of processes that would make the system deadlocked .
+
+Deadlock avoidance (Banker's Algo) uses a variance of resource allocation graph to avoid deadlock state .
+Clamp Edge
+
+Suppose that the process Pi request Rj that th process can be granted only if converting he request edge to an assignment edge does not result in the formation of a cycle .
 
 
 */
