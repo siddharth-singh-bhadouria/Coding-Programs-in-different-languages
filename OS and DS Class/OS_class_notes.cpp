@@ -67,5 +67,44 @@ Clamp Edge
 
 Suppose that the process Pi request Rj that th process can be granted only if converting he request edge to an assignment edge does not result in the formation of a cycle .
 
+Banker's Algorithm :
+1) Let Work and Finish be vectors of length ‘m’ and ‘n’ respectively.
+Initialize: Work = Available
+Finish[i] = false; for i=1, 2, 3, 4….n
+2) Find an i such that both
+a) Finish[i] = false
+b) Needi <= Work
+if no such i exists goto step (4)
+3) Work = Work + Allocation[i]
+Finish[i] = true
+goto step (2)
+4) if Finish [i] = true for all i
+then the system is in a safe state otherwise unsafe
+
+* Safe sequence can be more than one.
+
+Banker's algo is used to handle multiple instances of same resource .
+
+How many process and instances can Max request ?
+
+How many instances of each resource can each process hold ?
+
+How many instances of each resource is available in the system ?
+
+Banker's Algo :
+
+1. Start the program.
+2. Declare the memory for the process.
+3. Read the process,resources, allocatioin matrix and available matrix .
+4. calc the need matrix,i.e. need = max-allocation
+5. Compare each and every process
+6. if process is in save then it is not a deadlock process .
+7. produce the result of the state of the process.
+8. stop the program.
+
+
+
+
+
 
 */
