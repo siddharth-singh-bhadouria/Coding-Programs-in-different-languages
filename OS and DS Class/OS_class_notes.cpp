@@ -211,6 +211,17 @@ Methods of Attack :
 3. Message Tampering
 4. Message Replaying - To store the messages and send them later
 
+Infiltration :
+1. Virus
+2. Worms
+3. Trojan Horse
+4. Trap Doors
+
+Encryption : A common method of protecting information transmitted over public channel .
+The receiver decripts the cyfer text back to clear text . There are 2 common keys
+
+
+
 
 
 
