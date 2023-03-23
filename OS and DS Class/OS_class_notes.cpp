@@ -103,6 +103,83 @@ Banker's Algo :
 8. stop the program.
 
 
+Deadlock detection and recovery :
+1. Single Instance ( Wait for graph ) -
+2. Multiple Instance ( Banker's Algo ) -
+
+* Allow the system to enter into deadlocked state .
+
+Wait for graph- A wait for graph can be drawn by removing nodes of type resource and collapsing the appropriate ages from the resource allocation graph .
+
+An edge from Pi to Pj in a Wait for graph implies that process Pi is waiting for process Pj to release a resource that needs Pi . An edge Pi to Pj exists in a Wait for graph if and only if the corresponding resource allocation graph contains 2 edges for some resource Rq .
+
+A deadlock exists in a system if and only if the Wait for graph contains a cycle . To detect the deadlock the system needs to maintain Wait for graph and periodically invoke an algo that searches for a cycle in the graph .
+
+Deadlock Recovery :
+1. Optimistic Approach - Preempts some resources from process and give these resouces to some other process until the deadlock cycle is dropped . Abort all deadlock process .
+2. Pesimistic Approach - Abort one process at a time and decide next to abort .
+
+
+
+
+Memory Management :
+
+RM , PM , MM , FM , P&S
+
+1. Static Partitioning
+2. Dynamic Partitioning
+
+Internal Fragmentation - It occurs when the space is left within the partition after allocationing the partition .This space is known as internally fragmented space . This space cannot be alloted to allcate the other processes . This internal fragmentation is done because only static partioning allows to store only 1 process in each partition .
+
+It occurs when the total amount of empty space required to store the process is available in the main memory but the space is not contiguous so the process cannot be stored .
+
+
+Translating logical address into physical address :
+CPU always generates a logical address . A physical address is needed to address the MM .
+
+The tranlating scheme uses 2 types of registers :
+Step 1 : of the process in the main meomry limit is used to store adn sizw and
+Step 2 : Cpu generates a logical add containing the add of instructions that it wants to read .
+Step 3 : compares with limit of process
+
+1) If the generated address is greater than or equal to the limit , a trap is generated . This helops to prevent an unauthorized access .
+
+is the address of the Memory Location storing the required word .
+
+Dynamic Partitioning : It performs the allocation diagonally .
+
+Partition allocation algo - The processes arrive and leave
+
+Popular P A are first , best and worst fit .
+
+Partition allocation algo are used to decide which hole should be allocated to arriving process .
+
+Worst algo is best and best algo is worst
+
+Worst fit algo is best because space left after allocation inside the partition is of large size . This space might suit the requirement of arriving process .
+
+Best fit algo is worst because space left after allocation inside the partition is of small size . There is a low probabiility that this space might suit the requirement of arriving process .
+
+Different parts of the same process can be stored in diff places in the MM . There are 2 types of non-contiguous memory locations .
+
+
+
+Paging :
+It is a fixed size of partitioning scheme . In a paging secondary and main memory are divided into equal size of partitions . The partitions of SM are called pages and of MM are called frames . Each process is divided into parts . The pages of process are stored in the frame of MM depending upon their availability .
+
+Following steps to translate logical to physical address :
+
+
+
+Provide a mechanism for the enforcement of the policies governing
+
+Protection is a mechanism to control access to the resources . Protection mechanism provides controlled access by limiting the type of access that various users can make .
+Security is a major of confidence that the integrity of the system relies on .
+
+
+
+
+
 
 
 
