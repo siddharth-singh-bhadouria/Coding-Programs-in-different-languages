@@ -177,7 +177,20 @@ Protection is a mechanism to control access to the resources . Protection mechan
 Security is a major of confidence that the integrity of the system relies on .
 
 Security Voilation Categories :
-1. Breach of confidentiality -
+1. Breach of confidentiality - Unauthorised breach of data .
+2. Breach of Integrity - Unauthorised modification of data .
+3. Breach of Availability - Unauthorised destruction of data .
+4. Theft of Service
+5. Denial of Service
+
+Domain Protection : Computer system is a collection of processes and objects . Objects can be hardware (examples) or software (programs , files ,semaphores ). The operations that are possible may depend on the objects .
+
+Domain Structure : Domain is a collection of set of access rights .
+
+Access Rights = < object name , right-set >
+
+
+
 
 
 
