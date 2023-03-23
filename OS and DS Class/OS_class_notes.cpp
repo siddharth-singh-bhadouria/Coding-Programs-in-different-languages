@@ -176,6 +176,9 @@ Provide a mechanism for the enforcement of the policies governing
 Protection is a mechanism to control access to the resources . Protection mechanism provides controlled access by limiting the type of access that various users can make .
 Security is a major of confidence that the integrity of the system relies on .
 
+Security Voilation Categories :
+1. Breach of confidentiality -
+
 
 
 
