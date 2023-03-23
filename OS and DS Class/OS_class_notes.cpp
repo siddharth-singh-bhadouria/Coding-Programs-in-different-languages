@@ -189,7 +189,27 @@ Domain Structure : Domain is a collection of set of access rights .
 
 Access Rights = < object name , right-set >
 
+Security Majors :
+1. Physical
+2. Human - Eliminating bribery .
 
+Security Threats :
+1. Leakage
+2. Tampering
+3. Resource Stealing - Unauthorised use of facilities .
+4. Vandalism - Inteference with the proper operation of system .
+
+Authentication :
+1. One-factor (password)
+2. Two-factor (password , smart card)
+3. Three-factor (password , smart card , biometric)
+4. Multiple-factor (password , smart card , biometric and more )
+
+Methods of Attack :
+1. Eavesdropping
+2. Masquerading
+3. Message Tampering
+4. Message Replaying - To store the messages and send them later
 
 
 
