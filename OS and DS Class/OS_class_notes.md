@@ -248,3 +248,14 @@ Access Methods - when a file is used then this info must be accessed and read in
 
 
 File system allows the user to organize the files and other file systems' objects through use of directories . 
+
+
+Directory Structure :
+
+1. Single level directory 
+2. Two level directory
+3. Tree-structure directory
+4. Acyclic-graph directory
+5. General-graph directory
+
+
