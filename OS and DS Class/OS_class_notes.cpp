@@ -236,17 +236,6 @@ It is characterized by its length and data type .
 Record - It is a collection of related fields tahat can be treated as a unit by the program .
 
 File system provides the mechanism for online storage and access both data and program of the operating system and all the users of the computer system.
-The file consists of 2 distinct parts
-
-
-
-
-
-
-
-
-
-
 
 
 */
