@@ -165,7 +165,11 @@ Different parts of the same process can be stored in diff places in the MM . The
 
 
 Paging :
-It is a fixed size of partitioning scheme . In a paging secondary and main memory are divided into equal size of partitions . The partitions of SM are called pages and of MM are called frames . Each process is divided into parts . The pages of process are stored in the frame of MM depending upon their availability .
+It is a fixed size of partitioning scheme . 
+In a paging secondary and main memory are divided into equal size of partitions . 
+The partitions of SM are called pages and of MM are called frames . 
+Each process is divided into parts . 
+The pages of process are stored in the frame of MM depending upon their availability .
 
 Following steps to translate logical to physical address :
 
@@ -173,7 +177,8 @@ Following steps to translate logical to physical address :
 
 Provide a mechanism for the enforcement of the policies governing
 
-Protection is a mechanism to control access to the resources . Protection mechanism provides controlled access by limiting the type of access that various users can make .
+Protection is a mechanism to control access to the resources . 
+Protection mechanism provides controlled access by limiting the type of access that various users can make .
 Security is a major of confidence that the integrity of the system relies on .
 
 Security Voilation Categories :
@@ -183,7 +188,9 @@ Security Voilation Categories :
 4. Theft of Service
 5. Denial of Service
 
-Domain Protection : Computer system is a collection of processes and objects . Objects can be hardware (examples) or software (programs , files ,semaphores ). The operations that are possible may depend on the objects .
+Domain Protection : Computer system is a collection of processes and objects .
+ Objects can be hardware (examples) or software (programs , files ,semaphores ). 
+ The operations that are possible may depend on the objects .
 
 Domain Structure : Domain is a collection of set of access rights .
 
@@ -220,12 +227,16 @@ Infiltration :
 Encryption : A common method of protecting information transmitted over public channel .
 The receiver decripts the cyfer text back to clear text . There are 2 common keys .
 
-File Systems : File is a collection of related info stored on the secondary storage device . It is a collection of records where each record contains some fields and each field contains some data . 
+File Systems : File is a collection of related info stored on the secondary storage device .
+It is a collection of records where each record contains some fields and each field contains some data . 
 
 Field - It  is a basic collection of data and individual fields contain single values eg student name , roll no ,etc .
 It is characterized by its length and data type . 
 
 Record - It is a collection of related fields tahat can be treated as a unit by the program .
+
+File system provides the mechanism for online storage and access both data and program of the operating system and all the users of the computer system.
+The file consists of 2 distinct parts
 
 
 
