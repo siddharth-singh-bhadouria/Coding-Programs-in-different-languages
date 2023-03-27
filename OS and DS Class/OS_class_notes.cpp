@@ -218,7 +218,14 @@ Infiltration :
 4. Trap Doors
 
 Encryption : A common method of protecting information transmitted over public channel .
-The receiver decripts the cyfer text back to clear text . There are 2 common keys
+The receiver decripts the cyfer text back to clear text . There are 2 common keys .
+
+File Systems : File is a collection of related info stored on the secondary storage device . It is a collection of records where each record contains some fields and each field contains some data . 
+
+Field - It  is a basic collection of data and individual fields contain single values eg student name , roll no ,etc .
+It is characterized by its length and data type . 
+
+Record - It is a collection of related fields tahat can be treated as a unit by the program .
 
 
 
