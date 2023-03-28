@@ -259,3 +259,21 @@ Directory Structure :
 5. General-graph directory
 
 
+
+Magnetic disks provides secondary storage for mdoern computer systems .
+Each disk has flat circular shape like CD . 
+The 2 surfaces are covered by a magnetic material . 
+We store the info by recording it magnetically on the platers .
+The storage capacity of a common disk drive is measured in GB or TB .
+The capacity of magnet :
+c = s*t*p*n 
+
+
+
+Disk Scheduling : 
+
+Seek Time - Time to move the disk arm to the desired cyclinder .
+Rotational Latecy - Time for the desired sector to rotate the disk head .
+
+
+
