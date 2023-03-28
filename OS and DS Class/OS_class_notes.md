@@ -233,7 +233,7 @@ It is a collection of records where each record contains some fields and each fi
 Field - It  is a basic collection of data and individual fields contain single values eg student name , roll no ,etc .
 It is characterized by its length and data type . 
 
-Record - It is a collection of related fields tahat can be treated as a unit by the program .
+Record - It is a collection of related fields that can be treated as a unit by the program .
 
 File system provides the mechanism for online storage and access both data and program of the operating system and all the users of the computer system.
 
