@@ -277,3 +277,22 @@ Rotational Latecy - Time for the desired sector to rotate the disk head .
 
 
 
+Disk Scheduling Algorithms:
+
+DS is a technique used by the OS to schedule multiple request for accessing the disk . 
+Algo used for DS are called DS Algo . 
+
+1.FCFS DS Algo - This algo entertains the request in order they arrive in the disk key . 
+It is the simplest DS algo .
+Advantage - It is very simple and easy to understand . 
+It does not cause starvation to any request .
+Disadvantage - It results in increased total seek time .
+
+
+2.SSTF DS Algo - The basic idea is the track which is closer to current disk head position should be serviced first in order to minimize the seek time .
+Advantage - It provides less avg response and waiting time .
+Disadvantage - There is an overhead of finding out the closest request .
+The request which are far from the head might be starved .
+Switching the direction of the head frequently slows down the algo .
+
+
