@@ -326,3 +326,7 @@ Provices low variance in WT,RT.
 Disadvantage - There is an overhead of finding out the end request .
 
 
+Allocation Method :
+1.Continous
+1.Non-continous
+3.List
