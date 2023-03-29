@@ -296,3 +296,33 @@ The request which are far from the head might be starved .
 Switching the direction of the head frequently slows down the algo .
 
 
+3.SCAN DS Algo - The head start from the one end of the disk and move towards the other end servicing all the requests in between.
+After reaching the other end the head reverses its direction and mvoes towards the starting end servicing all the requests in between .
+The same process repeats .
+Also called Elevator Algo .
+Advantage - It is very simple and easy to understand .
+Does not lead to starvation .
+Provices low variance in WT.
+
+
+4.C-SCAN DS Algo - It is an improvement of Scan Algo . 
+The head start from 1 end of the disk and moves towards the other end , servicing all requests in between . 
+After reaching the other end the head reverses its direction . 
+It then returns to the starting end without servicing any request in between .
+The same process repeats.
+
+
+5.Look DS Algo - It is an improvement of Scan Algo .
+The head start from 1st request at one end of the disk and moves towards the last request at the other end , servicing all requests in between . 
+After reaching the last request at the other end it can return to the 1st request at the starting end servicing all request in between .
+
+
+6.C-Look DS Algo - The head start from 1st request at one end of the disk and moves towards the last request at the other end , servicing all requests in between . 
+After reaching the last request at the other end it can return to the 1st request at the starting end without servicing any request in between .
+Advantage - It does not cause till there are no requests to be serviced .
+Reduces the WT for requests just visited by the head .
+Does not lead to starvation .
+Provices low variance in WT,RT.
+Disadvantage - There is an overhead of finding out the end request .
+
+
