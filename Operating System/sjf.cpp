@@ -12,12 +12,12 @@ int main()
 
     for (i = 0; i < n; i++)
     {
-        cout << "enter arival time "; // input
+        cout << "enter arival time "; 
         cin >> a[i];
     }
     for (i = 0; i < n; i++)
     {
-        cout << "enter brust time "; // input
+        cout << "enter brust time "; 
         cin >> b[i];
     }
     for (i = 0; i < n; i++)
@@ -74,5 +74,5 @@ int main()
         cout << "P" << i + 1 << "              " << a[i] << "                " << b[i] << "                  " << wt[i] << "               " << tat[i] << endl;
     }
 
-    cout << "awt=" << awt << " atat=" << atat; // average waiting time and turn around time
+    cout << "awt=" << awt << " atat=" << atat; 
 }
