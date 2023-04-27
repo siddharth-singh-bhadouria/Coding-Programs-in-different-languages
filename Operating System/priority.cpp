@@ -1,99 +1,64 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+
 using namespace std;
 
-struct process
-{
-    int id;
-    int at;
-    int bt;
-    int pt;
-    int ct;
-    int tat;
-    int wt;
+struct Process {
+    int pid;        
+    int bt;         
+    int priority;   
 };
 
-typedef pair<int, int> pi;
+bool comparison(Process a, Process b) {
+    return (a.priority > b.priority);
+}
 
-int main()
-{
-    int n;
-    cin >> n;
+void findWaitingTime(Process proc[], int n, int wt[]) {
+    wt[0] = 0;
 
-    process p[n];
+    for (int i = 1; i < n; i++) {
+        wt[i] = proc[i - 1].bt + wt[i - 1];
+    }
+}
+void findTurnAroundTime(Process proc[], int n, int wt[], int tat[]) {
+    for (int i = 0; i < n; i++) {
+        tat[i] = proc[i].bt + wt[i];
+    }
+}
 
-    for (int i = 0; i < n; i++)
-    {
-        cin >> p[i].at >> p[i].bt >> p[i].pt;
-        p[i].id = i;
+void findAvgTime(Process proc[], int n) {
+    int wt[n], tat[n], total_wt = 0, total_tat = 0;
+    findWaitingTime(proc, n, wt);
+
+    findTurnAroundTime(proc, n, wt, tat);
+
+    cout << "\nProcesses " << " Burst time " << " Waiting time " << " Turn around time\n";
+    
+    for (int i = 0; i < n; i++) {
+        total_wt = total_wt + wt[i];
+        total_tat = total_tat + tat[i];
+        cout << " " << proc[i].pid << "\t\t" << proc[i].bt << "\t " << wt[i] << "\t\t " << tat[i] << endl;
     }
 
-    int ct[n];
+    cout << "\nAverage waiting time = " << (float)total_wt / (float)n;
+    cout << "\nAverage turn around time = " << (float)total_tat / (float)n;
+}
 
-    priority_queue<pi, vector<pi>, greater<pi>> pq;
+void priorityScheduling(Process proc[], int n) {
+    sort(proc, proc + n, comparison);
 
-    int j = 0, t = p[0].at, k = 0;
-
-    pq.push(make_pair(p[j].pt, p[j].id));
-
-    int index = pq.top().second;
-
-    p[index].ct = t + p[index].bt;
-
-    t = p[index].ct;
-    pq.pop();
-
-    j++;
-
-    while (j < n)
-    {
-        while (t >= p[j].at && j < n)
-        {
-            pq.push(make_pair(p[j].pt, p[j].id));
-            // cout<<j<<" "<<p[j].id<<" ";
-            j++;
-        }
-        if (pq.empty())
-        {
-            t++;
-            continue;
-        }
-        index = pq.top().second;
-
-        p[index].ct = t + p[index].bt;
-
-        t = p[index].ct;
-        pq.pop();
+    cout << "Order in which processes get executed:\n";
+    for (int i = 0; i < n; i++) {
+        cout << proc[i].pid << " ";
     }
 
-    while (!pq.empty())
-    {
-        index = pq.top().second;
+    findAvgTime(proc, n);
+}
 
-        p[index].ct = t + p[index].bt;
+int main() {
+    Process proc[] = {{1, 10, 2}, {2, 5, 0}, {3, 8, 1}};
+    int n = sizeof(proc) / sizeof(proc[0]);
 
-        t = p[index].ct;
-        pq.pop();
-    }
-
-    // for (int i = 0; i < 5; i++)
-    // {
-    //     cout<<ct[i]<<" ";
-    // }
-
-    cout << "\nProcesses  "
-         << " Burst time  "
-         << " Arr Time "
-         << " Priority "
-         << "Comp. Time\n";
-    //  << " Waiting time  " << " Turn around time\n";
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << "   " << p[i].id << "\t\t"
-             << p[i].bt << "\t    " << p[i].at << "\t\t" << p[i].pt
-             << "\t" << p[i].ct << endl;
-    }
-
-    // cout<<endl<<"Avg tat time is :"<<total_tat/n<<endl;
-    // cout<<"Avg wt time is :"<<total_wt/n<<endl;
+    priorityScheduling(proc, n);
+    return 0;
 }
