@@ -19,3 +19,14 @@ b = 4
 print(a & b)
 print(a | b)
 print(~a)
+
+print('Programming \t with \npython')
+
+print('city name =', 'Hamipur')
+print('city name ='+'Hamipur')
+
+# str1 = input('enter the value of string : ')
+# print (str1)
+
+x = input('Enter a binary number : ')
+print(int(x, 2))
