@@ -28,5 +28,5 @@ print('city name ='+'Hamipur')
 # str1 = input('enter the value of string : ')
 # print (str1)
 
-x = input('Enter a binary number : ')
-print(int(x, 2))
+# x = input('Enter a binary number : ')
+# print(int(x, 2))
