@@ -7,7 +7,6 @@ def fibonacci_recursive(n):
         return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
 
-# Input the value of n
 n = int(input("Enter the value of n: "))
 
 if n < 0:

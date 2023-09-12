@@ -16,7 +16,6 @@ def is_fibonacci_number(n):
         return False
 
 
-# Input the number to check
 num = int(input("Enter a number to check if it's a Fibonacci number: "))
 
 if is_fibonacci_number(num):
