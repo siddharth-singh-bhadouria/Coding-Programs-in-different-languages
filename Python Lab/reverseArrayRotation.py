@@ -10,7 +10,7 @@ def left_rotate_array(arr, k):
     reverse_array(arr, k, n - 1)
     reverse_array(arr, 0, n - 1)
 
-original_array = [1, 2, 3, 4, 5]
+original_array = [12, 21, 32, 43, 25]
 k = 1  
 left_rotate_array(original_array, k)
 print(original_array)
