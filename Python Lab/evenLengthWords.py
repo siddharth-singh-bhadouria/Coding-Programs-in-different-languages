@@ -1,16 +1,19 @@
-# def print_even_length_words(input_string):
+def print_even_length_words(input_string):
 
-#     words = input_string.split()
+    words = input_string.split()
 
-#     for word in words:
-#         if len(word) % 2 == 0:
-#             print(word)
+    for word in words:
+        if len(word) % 2 == 0:
+            print(word)
 
 
-# input_string = input("Enter a string: ")
+input_string = input("Enter a string: ")
 
-# print("Even-length words in the string:")
-# print_even_length_words(input_string)
+print("Even-length words in the string:")
+print_even_length_words(input_string)
+
+
+
 
 
 # name = "my name is sonia's \ni am assistant professor"
@@ -168,28 +171,28 @@
 # print("Product Result:", product_result)
 
 
-import pandas as pd
+# import pandas as pd
 
-# Creating a DataFrame
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Age': [25, 30, 35, 40],
-    'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']
-}
+# # Creating a DataFrame
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+#     'Age': [25, 30, 35, 40],
+#     'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-# Data exploration
-print("DataFrame:")
-print(df)
+# # Data exploration
+# print("DataFrame:")
+# print(df)
 
-# Data manipulation
-filtered_df = df[df['Age'] > 30]
-sorted_df = df.sort_values(by='Age')
+# # Data manipulation
+# filtered_df = df[df['Age'] > 30]
+# sorted_df = df.sort_values(by='Age')
 
-print("\nFiltered DataFrame (Age > 30):")
-print(filtered_df)
+# print("\nFiltered DataFrame (Age > 30):")
+# print(filtered_df)
 
-print("\nSorted DataFrame (by Age):")
-print(sorted_df)
+# print("\nSorted DataFrame (by Age):")
+# print(sorted_df)
 
